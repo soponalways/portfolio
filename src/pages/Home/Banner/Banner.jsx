@@ -26,7 +26,7 @@ export default function Banner() {
                             1000
                         ]}
                         wrapper="span"
-                        speed={20}
+                        speed={50}
                         style={{ display: 'inline-block' }}
                         className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4"
                         repeat={Infinity}
