@@ -4,6 +4,7 @@ import About from './About/About';
 import ParticleBackground from '../../Particles/ParticleBackground';
 import Skills from './Skills/Skills';
 import MyProjects from './MyProjects/MyProjects';
+import Contact from './ContactMe/Contact';
 
 const Home = () => {
     return (
@@ -27,6 +28,10 @@ const Home = () => {
             {/* <My Projects Section /> */}
             <section className='py-10 md:py-12 lg:py-14 bg-base-200'>
                 <MyProjects />
+            </section>
+            {/* <Contact Section /> */}
+            <section className='py-10 md:py-12 lg:py-14 bg-base-200'>
+                <Contact />
             </section>
         </div>
     );
