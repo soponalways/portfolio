@@ -44,7 +44,7 @@ const Navbar = () => {
 
             <div className="navbar-end flex gap-2 md:gap-4 lg:gap-6 items-center">
                 <ThemeToggole />
-                <Button className="btn btn-outline hover:bg-primary hover:text-base-content cursor-pointer">Resume</Button>
+                <Button className="btn btn-primary hover:bg-secondary hover:border-none hover:text-base-content cursor-pointer">Resume</Button>
             </div>
         </div>
     );

@@ -1,10 +1,15 @@
 import React from 'react';
 import Banner from './Banner/Banner';
 import About from './About/About';
+import ParticleBackground from '../../Particles/ParticleBackground';
 
 const Home = () => {
     return (
         <div>
+        <div className='absolute z-50 w-full h-full '>
+                <ParticleBackground />
+            </div>
+
             {/* <Hero section/> */}
             <section>
                 <Banner />
