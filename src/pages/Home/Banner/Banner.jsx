@@ -1,42 +1,43 @@
 import { Button } from "@material-tailwind/react";
+import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
 import { Link } from "react-router";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Banner() {
     const socials = [
-        { src: "/images/logos/facebook.png", alt: "Facebook", href: "https://www.facebook.com/soponalways" },
-        { src: "/images/logos/twitter.png", alt: "Twitter", href: "https://x.com/soponalways" },
-        { src: "/images/logos/linkedIn.png", alt: "LinkedIn", href: "https://www.linkedin.com/in/sopon-islam1" },
-        { src: "/images/logos/github.png", alt: "GitHub", href: "https://github.com/soponalways" },
+        { src: <FaFacebook />, alt: "Facebook", href: "https://www.facebook.com/soponalways" },
+        { src: <FaTwitter />, alt: "Twitter", href: "https://x.com/soponalways" },
+        { src: <FaLinkedin />, alt: "LinkedIn", href: "https://www.linkedin.com/in/sopon-islam1" },
+        { src: <FaGithub />, alt: "GitHub", href: "https://github.com/soponalways" },
     ]
     return (
-        <section id="banner" className=" flex items-center  bg-gradient-to-r from-primary to-secondary text-white">
+        <section id="banner" className="min-h-screen flex items-center  bg-gradient-to-r from-primary to-secondary text-white">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className=" text-center px-4">
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl">Welcome 👋 </h1>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl">Hi 👋, I'm Sopon islam </h1>
                     <TypeAnimation
                         sequence={[
-                            'Hi 👋, I\'m Sopon islam',
+                            'MERN Stack Developer',
                             1000,
-                            'How can I help you?',
+                            'Frontend Developer',
                             1000,
-                            'How are You?',
+                            'I am a Dedicated developer',
                             1000,
-                            'Download My Resume Below the Button ',
+                            'Full Stack Developer',
                             1000
                         ]}
                         wrapper="span"
                         speed={50}
                         style={{ display: 'inline-block' }}
-                        className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4"
+                        className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
                         repeat={Infinity}
                     />
                     <p className="text-lg md:text-xl lg:text-2xl mb-6">Frontend Developer | Jr. MERN Stack Developer</p>
                     <div className="flex items-center gap-2 md:gap-3 lg:gap-4 justify-center my-3 md:my-5 lg:my-6">
                         {
                             socials.map((social, index) => (
-                                <Link key={index} target="_blank" to={social.href}>
-                                    <img className="w-12 h-12 transition-transform duration-300 hover:scale-110 rounded-full" src={social.src} alt={social.alt} />
+                                <Link key={index} target="_blank" to={social.href} className="text-2xl md:text-3xl lg:text-4xl text-white hover:text-secondary duration-300" aria-label={social.alt}>
+                                    {social.src}
                                 </Link>
                             ))
                         }
@@ -46,8 +47,10 @@ export default function Banner() {
                         Download Resume
                     </Button>
                 </div>
-                <div className="">
-                    <img src="/images/Banner/Hero-img.jpg" alt="Sopon islam" width={500} height={500} className="w-full h-full" />
+                <div className="relative place-content-center place-items-center">
+                    <div className="absolute inset-0 bg-primary rounded-full opacity-50 "></div>
+                    <div className="absolute top-1/4 right-7 z-10 bg-transparent rounded-2xl md:rounded-3xl px-4 md:px-6 lg:px-7 py-2 md:py-4 lg:py-5"><span className="text-3xl font-bold md:text-4xl lg:text-5xl md:font-black text-secondary">MERN</span> <p className="text-center font-semibold">Stack Developer</p></div>
+                    <img src="/images/Banner/Hero-img.png" alt="Sopon islam" className=" w-1/2 h-1/2 relative z-10" />
                 </div>
             </div>
         </section>
