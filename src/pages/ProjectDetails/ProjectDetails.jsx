@@ -2,8 +2,8 @@ import React from "react";
 import { useParams } from "react-router";
 import { Container, Typography, Chip, Button, Stack } from "@mui/material";
 import Projects from "../Home/MyProjects/Projects";
-import { div } from "motion/react-client";
 import ParticleBackground from "../../Particles/ParticleBackground";
+import { Helmet } from "react-helmet-async";
 
 export default function ProjectDetails() {
     const { id } = useParams();
@@ -14,6 +14,12 @@ export default function ProjectDetails() {
     return (
         <div className="bg-base-200">
             <div className="absolute z-50">
+                <div>
+                    <Helmet>
+                        <title>Project Details - {project.name} </title>
+                        <meta name="description" content={project.description} />
+                    </Helmet>
+                </div>
                 <ParticleBackground />
             </div>
             <Container sx={{ py: 5 }}>
