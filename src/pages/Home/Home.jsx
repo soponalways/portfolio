@@ -2,11 +2,12 @@ import React from 'react';
 import Banner from './Banner/Banner';
 import About from './About/About';
 import ParticleBackground from '../../Particles/ParticleBackground';
+import Skills from './Skills/Skills';
 
 const Home = () => {
     return (
         <div>
-        <div className='absolute z-50 w-full h-full '>
+        <div className='absolute z-50 '>
                 <ParticleBackground />
             </div>
 
@@ -20,7 +21,7 @@ const Home = () => {
             </section>
             {/* <Skills Section /> */}
             <section>
-                {/* <Skills /> */}
+                <Skills />
             </section>
         </div>
     );
