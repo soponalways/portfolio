@@ -13,9 +13,9 @@ export default function Skills() {
     ];
 
     return (
-        <section id="skills" className="py-20 bg-base-100">
+        <section id="skills" className="bg-base-200">
             <div className="container mx-auto px-6 text-center ">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold md:font-bold text-primary mb-6 md:mb-8 lg:mb-10">My Skils</h2>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold md:font-bold text-primary mb-6 md:mb-8 lg:mb-10">My Skills</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {skills.map((skill, i) => (
                         <div key={i} className=" transition cursor-pointer">
@@ -26,8 +26,8 @@ export default function Skills() {
                                             className="w-6 md:w-8 lg:w-10 h-6 md:h-8 lg:h-10"
                                         />
                                     </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        <p className="text-xl md:text-2xl lg:text-3xl text-base-content mt-3 md:mt-4 lg:mt-5">{skill.title}</p>
+                                    <Typography variant="body2" color="text.secondary" className="text-xl md:text-2xl lg:text-3xl text-base-content mt-3 md:mt-4 lg:mt-5">
+                                        {skill.title}
                                     </Typography>
                                 </CardContent>
                             </AnimateBackgroundCard>
