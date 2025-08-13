@@ -1,5 +1,4 @@
 import { Button } from "@material-tailwind/react";
-import ThemeToggole from "../Theme/ThemeToggole";
 import { Link } from "react-router";
 
 const Navbar = () => {
@@ -43,7 +42,6 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-end flex gap-2 md:gap-4 lg:gap-6 items-center">
-                <ThemeToggole />
                 <Button className="btn btn-primary hover:bg-secondary hover:border-none hover:text-base-content cursor-pointer">Resume</Button>
             </div>
         </div>
