@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Merienda:wght@300..900&display=swap');
+
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -7,40 +9,32 @@
   --color-base-200: #dcdfe0;
   --color-base-100: #f8fbfc;
   --color-base-content: black;
-  --color-primary: #4fb8bf;
-  --color-primary-content: oklch(98% 0.01 240);
-  --color-secondary: #9f97d8;
-  --color-secondary-content: oklch(98% 0.01 200);
+  --color-primary: #03fc20;
+  --color-secondary: #fcc203;
   --color-accent: #9c74cd;
-  --color-accent-content: oklch(98% 0.01 160);
-  --color-info: oklch(70% 0.2 220);
-  --color-info-content: oklch(98% 0.01 220);
-  --color-success: oklch(65% 0.25 140);
-  --color-success-content: oklch(98% 0.01 140);
-  --color-warning: oklch(80% 0.25 80);
-  --color-warning-content: oklch(20% 0.05 80);
-  --color-error: oklch(65% 0.3 30);
-  --color-error-content: oklch(98% 0.01 30);
+  /* --color-base-200: #dcdfe0;
+  --color-base-100: #f8fbfc;
+  --color-base-content: black;
+  --color-primary: #4fb8bf;
+  --color-secondary: #9f97d8;
+  --color-accent: #9c74cd; */
+}
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
 }
 
-@plugin "daisyui/theme" {
-  name: "dark";
-  default: false;
-  --color-base-100: #2c3747;
-  --color-base-200: #1f2937;
-  --color-base-300: #1f2937;
-  --color-base-content: #f8fafc;
-  --color-secondary: #2f2768;
-  --color-primary: #40a9b0;
-  --color-secondary: #7a46d2;
-  --color-accent: #5a328b;
-  --color-accent-content: oklch(98% 0.01 160);
-  --color-info: oklch(70% 0.2 220);
-  --color-info-content: oklch(98% 0.01 220);
-  --color-success: oklch(65% 0.25 140);
-  --color-success-content: oklch(98% 0.01 140);
-  --color-warning: oklch(80% 0.25 80);
-  --color-warning-content: oklch(20% 0.05 80);
-  --color-error: oklch(65% 0.3 30);
-  --color-error-content: oklch(98% 0.01 30);
+.merienda-font {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caveat-font {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }

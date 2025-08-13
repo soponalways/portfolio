@@ -1,18 +1,19 @@
-import { Button } from "@material-tailwind/react";
-import ThemeToggole from "../Theme/ThemeToggole";
+import React from "react";
 import { Link } from "react-router";
+import { HashLink } from "react-router-hash-link";
+import { motion } from "motion/react"; // Use motion from motion/react for compatibility
+import AnimatedButton from "./AnimatedButton";
 
 const Navbar = () => {
-    const scrollToSection = (id) => {
-        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    };
-    const linksList = () => {
-        return <>
-            <li onClick={() => scrollToSection("banner")}><span>Home</span></li>
-            <li onClick={() => scrollToSection("about")}><span>About</span></li>
-            <li onClick={() => scrollToSection("skills")}><span>Skills</span></li>
+    const linksList = (
+        <>
+            <li><HashLink smooth to="/#home"><AnimatedButton text={'Home'} /></HashLink></li>
+            <li><HashLink smooth to="/#about"><AnimatedButton text={'About'} delay={1} /></HashLink></li>
+            <li><HashLink smooth to="/#skills"><AnimatedButton text={'Skills'} delay={1.3} /></HashLink></li>
+            <li><HashLink smooth to="/#projects"><AnimatedButton text={'Projects'} delay={1.5} /></HashLink></li>
+            <li><HashLink smooth to="/#contact"><AnimatedButton text={'Contact'} delay={1.7} /></HashLink></li>
         </>
-    }
+    )
 
     return (
         <div className="container mx-auto navbar shadow-md">
@@ -28,23 +29,24 @@ const Navbar = () => {
                         </svg>
                     </label>
                     <ul tabIndex={0}
-                        className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        {linksList()}
+                        className="menu-sm dropdown-content flex flex-col gap-3 justify-center items-center mt-3 p-2 bg-base-100 hover:bg-primary duration-300 transition rounded-box w-52 shadow-2xl shadow-secondary">
+                        {linksList}
                     </ul>
                 </div>
+
+
                 <Link href="/" className=" normal-case text-xl font-bold text-primary md:font-semibold lg:font-bold md:text-2xl"><code>&lt;Sopon /&gt;</code></Link>
             </div>
 
             {/* Desktop menu */}
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    {linksList()}
+                <ul className="menu-horizontal  border border-green-500 md:px-6 lg:px-8 rounded-2xl lg:rounded-3xl bg-gray-700 py-1 lg:py-2 gap-4 lg:gap-5">
+                    {linksList}
                 </ul>
             </div>
 
             <div className="navbar-end flex gap-2 md:gap-4 lg:gap-6 items-center">
-                <ThemeToggole />
-                <Button className="btn btn-primary hover:bg-secondary hover:border-none hover:text-base-content cursor-pointer">Resume</Button>
+                <button className="btn btn-primary hover:bg-secondary hover:border-none hover:text-base-content cursor-pointer">Resume</button>
             </div>
         </div>
     );
