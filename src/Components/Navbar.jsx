@@ -1,17 +1,19 @@
 import React from "react";
 import { Link } from "react-router";
 import { HashLink } from "react-router-hash-link";
+import { motion } from "motion/react"; // Use motion from motion/react for compatibility
+import AnimatedButton from "./AnimatedButton";
 
 const Navbar = () => {
-    const linksList = () => {
-        return <>
-            <li><HashLink smooth to="/#home">Home</HashLink></li>
-            <li><HashLink smooth to="/#about">About</HashLink></li>
-            <li><HashLink smooth to="/#skills">Skills</HashLink></li>
-            <li><HashLink smooth to="/#projects">Projects</HashLink></li>
-            <li><HashLink smooth to="/#contact">Contact</HashLink></li>
+    const linksList = (
+        <>
+            <li><HashLink smooth to="/#home"><AnimatedButton text={'Home'} /></HashLink></li>
+            <li><HashLink smooth to="/#about"><AnimatedButton text={'About'} /></HashLink></li>
+            <li><HashLink smooth to="/#skills"><AnimatedButton text={'Skills'} /></HashLink></li>
+            <li><HashLink smooth to="/#projects"><AnimatedButton text={'Projects'} /></HashLink></li>
+            <li><HashLink smooth to="/#contact"><AnimatedButton text={'Contact'} /></HashLink></li>
         </>
-    }
+    )
 
     return (
         <div className="container mx-auto navbar shadow-md">
@@ -27,8 +29,8 @@ const Navbar = () => {
                         </svg>
                     </label>
                     <ul tabIndex={0}
-                        className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                        {linksList()}
+                        className="menu-sm dropdown-content flex flex-col gap-3 justify-center items-center mt-3 p-2 bg-base-100 hover:bg-primary duration-300 transition rounded-box w-52 shadow-2xl shadow-secondary">
+                        {linksList}
                     </ul>
                 </div>
 
@@ -38,8 +40,8 @@ const Navbar = () => {
 
             {/* Desktop menu */}
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    {linksList()}
+                <ul className="menu-horizontal  border border-green-500 md:px-6 lg:px-8 rounded-2xl lg:rounded-3xl bg-gray-700 py-1 lg:py-2 gap-4 lg:gap-5">
+                    {linksList}
                 </ul>
             </div>
 
