@@ -8,10 +8,10 @@ const Navbar = () => {
     const linksList = (
         <>
             <li><HashLink smooth to="/#home"><AnimatedButton text={'Home'} /></HashLink></li>
-            <li><HashLink smooth to="/#about"><AnimatedButton text={'About'} /></HashLink></li>
-            <li><HashLink smooth to="/#skills"><AnimatedButton text={'Skills'} /></HashLink></li>
-            <li><HashLink smooth to="/#projects"><AnimatedButton text={'Projects'} /></HashLink></li>
-            <li><HashLink smooth to="/#contact"><AnimatedButton text={'Contact'} /></HashLink></li>
+            <li><HashLink smooth to="/#about"><AnimatedButton text={'About'} delay={1} /></HashLink></li>
+            <li><HashLink smooth to="/#skills"><AnimatedButton text={'Skills'} delay={1.3} /></HashLink></li>
+            <li><HashLink smooth to="/#projects"><AnimatedButton text={'Projects'} delay={1.5} /></HashLink></li>
+            <li><HashLink smooth to="/#contact"><AnimatedButton text={'Contact'} delay={1.7} /></HashLink></li>
         </>
     )
 

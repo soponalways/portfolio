@@ -9,9 +9,15 @@
   --color-base-200: #dcdfe0;
   --color-base-100: #f8fbfc;
   --color-base-content: black;
+  --color-primary: #03fc20;
+  --color-secondary: #fcc203;
+  --color-accent: #9c74cd;
+  /* --color-base-200: #dcdfe0;
+  --color-base-100: #f8fbfc;
+  --color-base-content: black;
   --color-primary: #4fb8bf;
   --color-secondary: #9f97d8;
-  --color-accent: #9c74cd;
+  --color-accent: #9c74cd; */
 }
 @layer base {
   html {

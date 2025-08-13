@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 
-const AnimatedButton = ({ text, onClick, className = "" }) => {
+const AnimatedButton = ({ text, onClick, className = "", delay= 0  }) => {
     return (
         <motion.button
             onClick={onClick}
@@ -16,7 +16,8 @@ const AnimatedButton = ({ text, onClick, className = "" }) => {
             transition={{
                 duration: 4,
                 repeat: Infinity,
-                ease: "linear"
+                ease: "linear",
+                delay: delay
             }}
         >
             {/* Inner background for button content */}
