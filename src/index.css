@@ -13,6 +13,11 @@
   --color-secondary: #9f97d8;
   --color-accent: #9c74cd;
 }
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
 
 .merienda-font {
   font-family: "Merienda", cursive;

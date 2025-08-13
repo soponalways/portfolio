@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Grid, Card, CardContent, Typography, Box } from "@mui/material";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -28,7 +28,7 @@ const contactItems = [
 
 const Contact = () => {
     return (
-        <div>
+        <div id='contact'>
             <div>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold md:font-bold text-primary mb-6 md:mb-8 lg:mb-10 text-center">
                     Contact Me

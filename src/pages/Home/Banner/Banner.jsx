@@ -1,4 +1,3 @@
-import { Button } from "@material-tailwind/react";
 import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
 import { Link } from "react-router";
 import { TypeAnimation } from "react-type-animation";
@@ -11,7 +10,7 @@ export default function Banner() {
         { src: <FaGithub />, alt: "GitHub", href: "https://github.com/soponalways" },
     ]
     return (
-        <section id="banner" className="min-h-screen bg-base-200 flex items-center ">
+        <section id="home" className="min-h-screen bg-base-200 flex items-center ">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className=" text-center px-4">
                     <h1 className="text-3xl md:text-4xl lg:text-5xl">Hi 👋, I'm Sopon islam </h1>
@@ -42,10 +41,10 @@ export default function Banner() {
                             ))
                         }
                     </div>
-                    <Button className="btn bg-primary hover:bg-secondary hover:border-none cursor-pointer py-2 md:py-3 lg:py-4 duration-300">
+                    <button className="btn bg-primary hover:bg-secondary hover:border-none cursor-pointer py-2 md:py-3 lg:py-4 duration-300">
                         {/* <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</Link> */}
                         Download Resume
-                    </Button>
+                    </button>
                 </div>
                 <div className="relative place-content-center place-items-center">
                     <div className="absolute inset-0 bg-primary rounded-full opacity-50 "></div>

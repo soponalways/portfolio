@@ -1,15 +1,15 @@
-import { Button } from "@material-tailwind/react";
+import React from "react";
 import { Link } from "react-router";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
-    const scrollToSection = (id) => {
-        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    };
     const linksList = () => {
         return <>
-            <li onClick={() => scrollToSection("banner")}><span>Home</span></li>
-            <li onClick={() => scrollToSection("about")}><span>About</span></li>
-            <li onClick={() => scrollToSection("skills")}><span>Skills</span></li>
+            <li><HashLink smooth to="/#home">Home</HashLink></li>
+            <li><HashLink smooth to="/#about">About</HashLink></li>
+            <li><HashLink smooth to="/#skills">Skills</HashLink></li>
+            <li><HashLink smooth to="/#projects">Projects</HashLink></li>
+            <li><HashLink smooth to="/#contact">Contact</HashLink></li>
         </>
     }
 
@@ -31,6 +31,8 @@ const Navbar = () => {
                         {linksList()}
                     </ul>
                 </div>
+
+
                 <Link href="/" className=" normal-case text-xl font-bold text-primary md:font-semibold lg:font-bold md:text-2xl"><code>&lt;Sopon /&gt;</code></Link>
             </div>
 
@@ -42,7 +44,7 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-end flex gap-2 md:gap-4 lg:gap-6 items-center">
-                <Button className="btn btn-primary hover:bg-secondary hover:border-none hover:text-base-content cursor-pointer">Resume</Button>
+                <button className="btn btn-primary hover:bg-secondary hover:border-none hover:text-base-content cursor-pointer">Resume</button>
             </div>
         </div>
     );
