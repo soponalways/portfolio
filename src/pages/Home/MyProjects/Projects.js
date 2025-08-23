@@ -1,7 +1,7 @@
 const Projects = [
     {
         id: 1,
-        name: "Forum Website",
+        name: "Forum Hive",
         image: "https://i.ibb.co.com/7JYPqFCD/Forum-Hiveimage1.png",
         techStack: ["React", "Node.js", "Express", "MongoDB", "JWT", "Firebase", "HTML", "CSS", "TailwindCSS", "Hook Form", "Material UI", "Framer Motion", "Stripe API"],
         description: "ForumHive is a feature-rich full-stack discussion platform built with the MERN stack, designed to encourage community engagement, learning. Users can register, share posts, interact via comments and votes, report activities, and explore posts using powerful filtering and searching features. The platform offers membership upgrades, badges, and an admin panel for managing users, reports, and announcements.",
@@ -12,7 +12,7 @@ const Projects = [
     },
     {
         id: 2,
-        name: "Course Management System",
+        name: "Shikho Now",
         image: "https://i.ibb.co.com/1Y4n4qry/image.png",
         techStack: ["React", "Node.js", "Express", "MongoDB",  "Firebase", "HTML", "CSS", "TailwindCSS", "Hook Form", "Framer Motion", "Stripe"],
         description: "This Course Management system Called Shikho Now. This is a modern course management web application that allows students to explore, enroll in, and track their learning journey in a smooth and interactive way. Built with React and Tailwind CSS, it delivers a responsive and user-friendly experience for both learners and administrators.",
@@ -23,7 +23,7 @@ const Projects = [
     },
     {
         id: 3,
-        name: "Hobby sharing platform",
+        name: "Hobby Hub",
         image: "https://i.ibb.co.com/ynmB6C86/image.png",
         techStack: ["React", "Node.js", "Express", "MongoDB", "Firebase", "HTML", "CSS", "TailwindCSS", "Hook Form", "Framer Motion"],
         description: "A platform for users to share and discover hobbies, with real-time chat and collaboration features. Join the group to share their discussions.",
