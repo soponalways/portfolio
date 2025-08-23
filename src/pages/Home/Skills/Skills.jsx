@@ -1,5 +1,7 @@
+import { TypeAnimation } from "react-type-animation";
 import AnimateBackgroundCard from "../../../Components/AnimateBackgroundCard";
 import { CardContent, Typography } from "@mui/material";
+import { motion } from "motion/react";
 
 export default function Skills() {
     const skills = [
@@ -15,7 +17,24 @@ export default function Skills() {
     return (
         <section id="skills" className="bg-base-200">
             <div className="container mx-auto px-6 text-center ">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold md:font-bold text-primary mb-6 md:mb-8 lg:mb-10">My Skills</h2>
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-center mb-3 md:mb-5 lg:mb-7">
+                    <div className="relative mx-auto -top-5 w-12 h-12 md:w-16 md:h-16 lg:h-20 lg:w-20 bg-gradient-to-r from-primary to-secondary rounded-full animate-pulse"></div>
+                    <TypeAnimation
+                        sequence={[
+                            'My Skills',
+                            1000,
+                            'My Technology Stack',
+                            1000,
+                        ]}
+                        speed={50}
+                        repeat={Infinity}
+                        className="text-3xl md:text-4xl lg:text-5xl font-semibold md:font-bold text-primary "
+                    />
+                </motion.div>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {skills.map((skill, i) => (
                         <div key={i} className=" transition cursor-pointer">
