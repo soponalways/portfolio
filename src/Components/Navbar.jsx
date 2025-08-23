@@ -46,7 +46,7 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-end flex gap-2 md:gap-4 lg:gap-6 items-center">
-                <button className="btn btn-primary hover:bg-secondary hover:border-none hover:text-base-content cursor-pointer">Resume</button>
+                <Link to={'https://drive.google.com/file/d/16PwOXCMStcDOaDUBchrWAg_qqTH11RQa/view?usp=drive_link'} target="_blank" className="btn btn-primary hover:bg-secondary hover:border-none hover:text-base-content cursor-pointer">Resume</Link>
             </div>
         </div>
     );
