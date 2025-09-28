@@ -4,9 +4,14 @@
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
-  name: "light";
+  name: "dark";
   default: true;
-  --color-base-200: #dcdfe0;
+  --color-base-200: #0a0d37;
+  --color-base-100: #101554;
+}
+@plugin "daisyui/theme" {
+  name: "light";
+  --color-base-200: #0a0d37;
   --color-base-100: #f8fbfc;
   --color-base-content: black;
   --color-primary: #03fc20;
