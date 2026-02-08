@@ -35,12 +35,14 @@ const Navbar = () => {
                 </div>
 
 
-                <Link href="/" className=" normal-case text-xl font-bold text-primary md:font-semibold lg:font-bold md:text-2xl"><code>&lt;Sopon /&gt;</code></Link>
+                <Link href="/" className=" normal-case text-xl font-bold text-primary md:font-semibold lg:font-bold md:text-2xl">
+                    <img src="/images/sopon1.png" alt="Sopon Islam" className="w-18 h-10 rounded-md" />
+                </Link>
             </div>
 
             {/* Desktop menu */}
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu-horizontal  border border-green-500 md:px-6 lg:px-8 rounded-2xl lg:rounded-3xl bg-gray-700 py-1 lg:py-2 gap-4 lg:gap-5">
+                <ul className="menu-horizontal  border border-primary md:px-6 lg:px-8 rounded-2xl lg:rounded-3xl bg-base-100 py-1 lg:py-2 gap-4 lg:gap-5">
                     {linksList}
                 </ul>
             </div>
