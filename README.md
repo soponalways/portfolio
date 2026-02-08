@@ -1,12 +1,28 @@
-# React + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## This is a portfolio. This project you can use. 
 
-Currently, two official plugins are available:
+### All env Credential format you need to run this project for client side 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```typescript
+VITE_apiKey=Your api key from firebase
+VITE_authDomain=Your auth Domain from firebase
+VITE_projectId=Your project ID from firebase
+VITE_storageBucket=Your Storage bucket from firebase
+VITE_messagingSenderId=Sender ID from firebase
+VITE_appId=Your firebase app ID
+VITE_measurementId=Your firebase measurementId
 
-## Expanding the ESLint configuration
+# VITE_SERVER_URL=http://localhost:3000
+VITE_SERVER_URL=https://portfolio-server-opal-phi.vercel.app
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### all credentials format you need to run ther server of this project 
+
+```typescript 
+DbPass=database password
+dbuser=Database user name
+MONGODB_URI=Your mongodb cluster url
+APP_EMAIL=Your email 
+APP_PASSWORD=Your oauth app password from google cloude console
+```
