@@ -28,12 +28,16 @@ const MyProjects = () => {
             </motion.div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3 lg:gap-4'>
                 {
-                    Projects?.map((project, i) => <SpotlightCardWraper
-                        key={project.id}
-                        spotlightColor="rgba(0, 229, 255, 0.2)"
-                    >
+                    Projects?.map((project, i) => (
+                        // <SpotlightCardWraper
+                        //     key={project.id}
+                        //     spotlightColor="rgba(0, 229, 255, 0.2)"
+                        // >
+                        //     <Card project={project} index={i} />
+                        // </SpotlightCardWraper>
+
                         <Card project={project} index={i} />
-                    </SpotlightCardWraper>)
+                    ))
                 }
             </div>
         </div>
