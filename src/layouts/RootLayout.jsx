@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
 import { Outlet } from 'react-router';
+import Footer from '../Components/Footer';
 
 
 const RootLayout = () => {
@@ -12,8 +13,9 @@ const RootLayout = () => {
             <main className="min-h-[88vh]">
                 <Outlet />
             </main>
-            <footer>
-                <p className="text-center">© 2025 Sopon islam. All rights reserved.</p>
+            <footer className=''>
+                {/* <p className="text-center">© 2025 Sopon islam. All rights reserved.</p> */}
+                <Footer />
             </footer>
         </div>
     );
