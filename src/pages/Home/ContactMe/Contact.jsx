@@ -40,7 +40,7 @@ const Contact = () => {
     return (
         <div id='contact' className='container mx-auto px-6 py-10 bg-base-200'>
             <div>
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
@@ -58,20 +58,21 @@ const Contact = () => {
                         className="text-3xl md:text-4xl lg:text-5xl font-semibold md:font-bold text-primary "
                     />
                 </motion.div>
-                <motion.h1 
+                <motion.h1
                     initial={{ opacity: 0, y: 100 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.3 }} 
+                    transition={{ duration: 0.6, delay: 0.3 }}
                     className='text-xl md:text-3xl lg:text-4xl text-center'>Reach Out me to the below option</motion.h1>
             </div>
             <div className="flex flex-col lg:flex-row gap-8 p-8">
                 {/* Left Side Contact Info */}
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.5 }} 
-                    whileHover={{ skew: 2, borderColor: 'green', boxShadow: "0px 0px 20px green" }}
-                    className="flex-1 space-y-3 md:space-y-5 lg:space-y-6 h-full bg-gray-600 p-5 md:p-8 lg:p-10 lg:sticky lg:top-20 rounded-lg shadow-lg border border-primary ">
+                    initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ duration: 0.6, }}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="flex-1 space-y-3 md:space-y-5 lg:space-y-6 h-full bg-base-100 p-5 md:p-8 lg:p-10 lg:sticky lg:top-20 rounded-lg shadow-lg border border-primary shadow-primary/30">
                     <h2 className="text-2xl font-bold md:text-3xl lg:text-4xl">Contact Info</h2>
                     <div className='space-y-2 md:space-y-3 lg:space-y-4'>
                         <p> <PhoneIcon sx={{ fontSize: 24, color: "#1976d2" }} /> Phone: <Link to="tel:+8801884953018">+8801884953018</Link></p>
@@ -83,10 +84,12 @@ const Contact = () => {
 
                 {/* Right Side Form */}
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.8 }} 
-                    className="flex-1 p-5 md:p-8 lg:p-10 bg-gray-600 rounded-lg shadow-lg border border-primary ">
+                    initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    transition={{ duration: 0.6, }}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="flex-1 p-5 md:p-8 lg:p-10 bg-base-100 rounded-lg shadow-lg border border-primary shadow-primary/30">
                     <h2 className="text-xl md:text-2xl font-semibold md:font-bold  mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">Send Message to fillup the form</h2>
 
                     <form onSubmit={handleSubmit(onSubmit)} className="">

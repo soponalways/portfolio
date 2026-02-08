@@ -14,7 +14,7 @@ const Projects = [
         id: 2,
         name: "Shikho Now",
         image: "https://i.ibb.co.com/1Y4n4qry/image.png",
-        techStack: ["React", "Node.js", "Express", "MongoDB",  "Firebase", "HTML", "CSS", "TailwindCSS", "Hook Form", "Framer Motion", "Stripe"],
+        techStack: ["React", "Node.js", "Express", "MongoDB", "Firebase", "HTML", "CSS", "TailwindCSS", "Hook Form", "Framer Motion", "Stripe"],
         description: "This Course Management system Called Shikho Now. This is a modern course management web application that allows students to explore, enroll in, and track their learning journey in a smooth and interactive way. Built with React and Tailwind CSS, it delivers a responsive and user-friendly experience for both learners and administrators.",
         liveLink: "https://shikho-now.web.app/",
         githubLink: "https://github.com/soponalways/shikho-now-client",
