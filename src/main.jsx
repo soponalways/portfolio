@@ -2,10 +2,10 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { RouterProvider } from 'react-router'
-import router from './Router/Router.jsx'
 import { HelmetProvider } from 'react-helmet-async';
 import AnimatedCursor from 'react-animated-cursor'
 import { Bounce, ToastContainer } from 'react-toastify'
+import router from './Router/router';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -30,8 +30,8 @@ createRoot(document.getElementById('root')).render(
             'select',
             'textarea',
             'button',
-            '.link', 
-            
+            '.link',
+
           ]}
         />
         <ToastContainer

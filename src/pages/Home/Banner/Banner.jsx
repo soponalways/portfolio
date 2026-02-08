@@ -55,7 +55,7 @@ export default function Banner() {
                                 }
                             </div>
                             <button className="btn bg-primary hover:bg-secondary hover:border-none cursor-pointer py-2 md:py-3 lg:py-4 duration-300">
-                                <Link to="https://drive.google.com/file/d/16PwOXCMStcDOaDUBchrWAg_qqTH11RQa/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Download Resume</Link>
+                                <Link to="https://drive.google.com/file/d/1SLb3Nnu5ED48lIZB3m3eMNPo5WZxe82k/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download Resume</Link>
                             </button>
                         </div>
                     </div>
